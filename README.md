@@ -64,7 +64,6 @@ Should you find an error, or improve anything, be it in the config itself or in 
 | Feature                              | Status | Dependency          | Remarks                      |
 | :----------------------------------- | ------ | ------------------- | ---------------------------- |
 | iCloud, iMessage, FaceTime | ✅ | Whitelisted Apple ID, Valid SMBIOS See [Dortania / OpenCore-Install-Guide](https://dortania.github.io/OpenCore-Post-Install/universal/iservices.html) | - |
-| Continuity Camera | ✅ | - | - |
 | AirDrop | ✅ | - | - |
 | Universal Control | ✅ | - | - |
 | Apple Watch Auto Unlock | ✅ | - | - |
@@ -91,6 +90,7 @@ Should you find an error, or improve anything, be it in the config itself or in 
 | Feature                              | Status | Dependency          | Remarks                      |
 | :----------------------------------- | ------ | ------------------- | ---------------------------- |
 | Sidecar | ❌ | - | Cannot work on this machine as the there's no iGPU |
+| Continuity Camera | ❌ | - | Cannot work on this machine as the there's no iGPU |
 | FireVault 2 | ❌ | - | Cannot work when SecureBootModel is Disabled for OCLP |
 
 </details>  
