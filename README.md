@@ -10,7 +10,7 @@ OpenCore-based EFI for HP Z640 (Haswell-E)
 [![OpenCore](https://img.shields.io/badge/OpenCore-1.0.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/tag/1.0.0)
 [![Model](https://img.shields.io/badge/Model-Z640-grey)](https://support.hp.com/us-en/document/c04496994)
 
-This project was created from scratch using the [Dortania](https://dortania.github.io/getting-started/) guide specifically for the HP Z640, but should work on the Z440 and Z480 with a few [adjustments](https://github.com/HJebbour/Z640-Hackintosh/edit/main/README.md#pre-installation).
+This project was created from scratch using the [Dortania](https://dortania.github.io/getting-started/) guide specifically for the HP Z640, but should work on the Z440 and Z480 with a few [adjustments](https://github.com/HJebbour/Z640-Hackintosh/tree/main#pre-installation).
 
 **DISCLAIMER:**
 As you embark on your Hackintosh journey you are encouraged to **READ** the entire README and [Dortania](https://dortania.github.io/getting-started/) guides before you start.
