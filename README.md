@@ -10,7 +10,7 @@ OpenCore-based EFI for HP Z640 (Haswell-E)
 [![OpenCore](https://img.shields.io/badge/OpenCore-1.0.0-blue.svg)](https://github.com/acidanthera/OpenCorePkg/releases/tag/1.0.0)
 [![Model](https://img.shields.io/badge/Model-Z640-grey)](https://support.hp.com/us-en/document/c04496994)
 
-This project was created from scratch using the [Dortania](https://dortania.github.io/getting-started/) guide specifically for the HP Z640, but should work on the Z440 and Z480 with a few adjustments.
+This project was created from scratch using the [Dortania](https://dortania.github.io/getting-started/) guide specifically for the HP Z640, but should work on the Z440 and Z480 with a few [adjustments](https://github.com/HJebbour/Z640-Hackintosh/edit/main/README.md#pre-installation).
 
 **DISCLAIMER:**
 As you embark on your Hackintosh journey you are encouraged to **READ** the entire README and [Dortania](https://dortania.github.io/getting-started/) guides before you start.
@@ -287,7 +287,37 @@ Refer to [HP Z640 Specs](https://support.hp.com/us-en/document/c04496994) for po
 - **Performance Options**
   - `Intel Hyper-Threading Technology` **Enable**
 
-</details>  
+</details>
+
+<details><summary><strong>ADJUSTMENTS</strong></summary>
+<br>
+
+**Broadwell-E**
+
+To enable support for Xeon v4 CPUs, you must change the following values in `Kernel -> Emulate` under your config.plist file:
+
+- **Cpuid1Data: D4060300 00000000 00000000 00000000**
+  - Fake CPUID entry
+- **Cpuid1Mask: FFFFFFFF 00000000 00000000 00000000**
+  - Mask for fake CPUID
+
+**Haswell-E**
+
+To enable support for Xeon v3 CPUs, you must change the following values in `Kernel -> Emulate` under your config.plist file (Already configured in the included EFI folder):
+
+- **Cpuid1Data: C3060300 00000000 00000000 00000000**
+  - Fake CPUID entry
+- **Cpuid1Mask: FFFFFFFF 00000000 00000000 00000000**
+  - Mask for fake CPUID
+
+**Z840 Support**
+
+- **2nd LAN port must be disabled in BIOS for Z840 workstations**
+- **Add the following kexts to enable SAS controller**
+  - AstekFusion2Family.kext
+  - AstekFusion2Adapter.kext
+
+</details>
 
 <details><summary><strong>KEYBOARD LAYOUT</strong></summary>
 <br>
