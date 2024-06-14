@@ -344,4 +344,5 @@ Pick your keyboard layout here:
 <details><summary><strong>OpenCore Installation</strong></summary>
 <br>
 
-Move the entire EFI folder from the prepared USB (with your modifications) to the EFI partition on your hard drive or SSD.
+1. Move the entire EFI folder from the prepared USB (with your modifications) to the EFI partition on your hard drive or SSD.
+2. If you have a Broadcom wireless card (Wi-Fi & Bluetooth) use the [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/releases). The EFI folder is already prepared for OCLP.
